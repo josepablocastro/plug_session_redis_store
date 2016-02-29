@@ -1,0 +1,8 @@
+%{"cowboy": {:hex, :cowboy, "1.0.4"},
+  "cowlib": {:hex, :cowlib, "1.0.2"},
+  "eredis": {:hex, :eredis, "1.0.8"},
+  "exredis": {:hex, :exredis, "0.2.3"},
+  "plug": {:hex, :plug, "1.1.2"},
+  "poolboy": {:hex, :poolboy, "1.5.1"},
+  "ranch": {:hex, :ranch, "1.2.1"},
+  "redis_poolex": {:hex, :redis_poolex, "0.0.5"}}
