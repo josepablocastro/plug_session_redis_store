@@ -1,8 +1,8 @@
-%{"cowboy": {:hex, :cowboy, "1.0.4"},
-  "cowlib": {:hex, :cowlib, "1.0.2"},
-  "eredis": {:hex, :eredis, "1.0.8"},
-  "exredis": {:hex, :exredis, "0.2.3"},
-  "plug": {:hex, :plug, "1.1.2"},
-  "poolboy": {:hex, :poolboy, "1.5.1"},
-  "ranch": {:hex, :ranch, "1.2.1"},
-  "redis_poolex": {:hex, :redis_poolex, "0.0.5"}}
+%{"cowboy": {:hex, :cowboy, "1.0.4", "a324a8df9f2316c833a470d918aaf73ae894278b8aa6226ce7a9bf699388f878", [:make, :rebar], [{:cowlib, "~> 1.0.0", [hex: :cowlib, optional: false]}, {:ranch, "~> 1.0", [hex: :ranch, optional: false]}]},
+  "cowlib": {:hex, :cowlib, "1.0.2", "9d769a1d062c9c3ac753096f868ca121e2730b9a377de23dec0f7e08b1df84ee", [:make], []},
+  "eredis": {:hex, :eredis, "1.0.8", "ab4fda1c4ba7fbe6c19c26c249dc13da916d762502c4b4fa2df401a8d51c5364", [:rebar], []},
+  "exredis": {:hex, :exredis, "0.2.3", "8a0b8fd4a24ceca5224675c4fc5acdac69d63b62f6e7d10e24b121bc77e594c1", [:mix], [{:eredis, ">= 1.0.8", [hex: :eredis, optional: false]}]},
+  "plug": {:hex, :plug, "1.1.2", "7ed5cdc0245a56fcc9ad905c059dd2314cea9d043e6d0b8fd99b4845a3e220d5", [:mix], [{:cowboy, "~> 1.0", [hex: :cowboy, optional: true]}]},
+  "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []},
+  "ranch": {:hex, :ranch, "1.2.1", "a6fb992c10f2187b46ffd17ce398ddf8a54f691b81768f9ef5f461ea7e28c762", [:make], []},
+  "redis_poolex": {:hex, :redis_poolex, "0.0.6", "8b147e064d4e2525131660ec33f2f1b8ff65b19fe9601bbb1c152268621d242c", [:mix], [{:exredis, ">= 0.2.2", [hex: :exredis, optional: false]}, {:poolboy, ">= 1.5.1", [hex: :poolboy, optional: false]}]}}

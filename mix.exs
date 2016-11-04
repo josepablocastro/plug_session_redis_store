@@ -3,7 +3,7 @@ defmodule Plug.Session.RedisStore.Mixfile do
 
   def project do
     [app: :plug_session_redis_store,
-     version: "0.1.0",
+     version: "0.2.0",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -36,7 +36,7 @@ defmodule Plug.Session.RedisStore.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:redis_poolex, "~> 0.0.5"},
+      {:redis_poolex, "~> 0.0.6"},
       {:cowboy, "~> 1.0.0"},
       {:plug, "~> 1.0"}
     ]

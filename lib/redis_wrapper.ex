@@ -10,8 +10,8 @@ defmodule Plug.Session.RedisWrapper do
     Redis.query(["GET", key])
     Redis.query(["EXPIRE", key, ttl])
     case Redis.query(["EXEC"]) do 
-      [:undefined, _] -> :not_found
-      [v, _]          -> {:ok, unmarshal(v)}
+      [:undefined | _] -> :not_found
+      [v | _]          -> {:ok, unmarshal(v)}
     end
   end
 
