@@ -36,7 +36,7 @@ defmodule Plug.Session.RedisStore.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:redis_poolex, "~> 0.0.5"},
+      {:redis_poolex, "~> 0.0.6"},
       {:cowboy, "~> 1.0.0"},
       {:plug, "~> 1.0"}
     ]
