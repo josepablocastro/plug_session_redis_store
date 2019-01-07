@@ -3,7 +3,7 @@ defmodule Plug.Session.RedisStore.Mixfile do
 
   def project do
     [app: :plug_session_redis_store,
-     version: "0.2.0",
+     version: "0.3.0",
      elixir: "~> 1.6",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
