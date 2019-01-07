@@ -32,7 +32,7 @@ defmodule Plug.Session.RedisStore do
   end
 
   def put(conn, nil, data, opts) do
-    put(conn, generate_sid, data, opts)
+    put(conn, generate_sid(), data, opts)
   end
 
   def put(_conn, sid, data, opts) do

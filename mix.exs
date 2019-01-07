@@ -4,10 +4,10 @@ defmodule Plug.Session.RedisStore.Mixfile do
   def project do
     [app: :plug_session_redis_store,
      version: "0.2.0",
-     elixir: "~> 1.2",
+     elixir: "~> 1.6",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -37,7 +37,7 @@ defmodule Plug.Session.RedisStore.Mixfile do
   defp deps do
     [
       {:redis_poolex, "~> 0.0.6"},
-      {:cowboy, "~> 1.0.0"},
+      {:cowboy, "~> 1.1.0"},
       {:plug, "~> 1.0"}
     ]
   end
